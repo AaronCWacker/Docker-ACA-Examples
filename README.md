@@ -1,11 +1,12 @@
 
-Docker Starter Projects:
+# Docker Starter Projects for AI:
 
-Streamlit: https://huggingface.co/spaces/DockerTemplates/streamlit-docker-example
-Gradio: https://huggingface.co/spaces/sayakpaul/demo-docker-gradio
-HTTP w GO: https://huggingface.co/spaces/XciD/test-docker-go?q=Adrien
-Secrets: https://huggingface.co/spaces/DockerTemplates/secret-example
-Fast API: https://huggingface.co/spaces/DockerTemplates/fastapi_t5
+1. Streamlit: https://huggingface.co/spaces/DockerTemplates/streamlit-docker-example
+2. Gradio: https://huggingface.co/spaces/sayakpaul/demo-docker-gradio
+3. HTTP w GO: https://huggingface.co/spaces/XciD/test-docker-go?q=Adrien
+4. Secrets: https://huggingface.co/spaces/DockerTemplates/secret-example
+5. Fast API: https://huggingface.co/spaces/DockerTemplates/fastapi_t5
+
 
 # Github Actions Deploy to ACA:
 
