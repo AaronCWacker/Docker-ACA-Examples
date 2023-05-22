@@ -1,0 +1,7 @@
+gradio
+transformers
+torch
+Werkzeug
+huggingface_hub
+Pillow
+datasets
