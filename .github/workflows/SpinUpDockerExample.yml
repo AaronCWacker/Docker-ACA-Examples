@@ -1,0 +1,19 @@
+name: Deploy to Azure Container Apps
+
+on: push: branches: - main
+
+env: AZURE_CONTAINER_APP_NAME: AZURE_CONTAINER_REGISTRY_NAME: IMAGE_TAG: ${{ github.sha }}
+
+jobs: deploy: runs-on: ubuntu-latest steps: - name: Check out code uses: actions/checkout@v2
+
+  - name: Login to Azure
+    uses: azure/login@v1
+    with:
+      creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+  - name: Deploy to Azure Container Apps
+    uses: azure/container-apps-deploy-action@v1
+    with:
+      containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
+      imageName: ${{ env.AZURE_CONTAINER_REGISTRY_NAME }}.azurecr.io/myimage:${{ env.IMAGE_TAG }}
+	
